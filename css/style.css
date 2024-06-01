@@ -1,0 +1,29 @@
+/* the box model consists of from inside out: content box, padding, border, margin */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* this makes the box to be considered from margin instead of only content */
+} /* this is a css reset */
+.container {
+    border: 2px dashed rgb(255, 0, 0); /* size style color *//* you can change individual properties by using border-top-width/color/style */
+    padding: 1.5rem 2em 3em 4em; /* the order is top right bottom left is there are 4 elements, it's top right-left bottom if there are 3 elements and top-bottom right-left if there are 2 elements */
+    font-size: 1.5rem;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    /* margin: 2em */
+    outline: 2px solid green; /* this is not considered in the box model as it is given no size */ 
+    outline-offset: -20px;
+}
+.circle{
+    border: 2px outset burlywood;
+    width:100px;
+    height:100px; 
+    margin: 2rem auto; /* the auto sets the right and left margin so the content box is in center */
+    background-color: violet;
+    outline: 4px ridge royalblue;
+    outline-offset: 0.25rem;
+    border-radius:50px;
+
+}
